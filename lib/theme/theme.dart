@@ -7,7 +7,9 @@ final ThemeData appTheme = ThemeData(
     highlightColor: Color(0xFF23C16B),
     cardColor: Color(0xFFFBF3EA),
     indicatorColor: Color(0xFF979C9E),
-    buttonColor: Color(0xFFE5DFF5));
+   fontFamily: 'IBMPlexSans',
+   // buttonColor: Color(0xFFE5DFF5)
+);
 
 TextStyle headLine =
     GoogleFonts.inter(fontWeight: FontWeight.w500, fontSize: 22, height: 1.4);
@@ -91,6 +93,23 @@ TextStyle logintext = GoogleFonts.manrope(
   fontWeight: FontWeight.w600,
   fontSize: 17,
 );
+
+
+
+LinearGradient secondbackgorundColor = LinearGradient(
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  colors: [const Color( 0xFFC5CAE9),Colors.white],
+);
+
+LinearGradient thirdbackgorundColor = LinearGradient(
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  colors: [Color(0xFFD7CCC8),Colors.white],
+);
+
+
+
 
 LinearGradient backgorundColor = LinearGradient(
   begin: Alignment.topCenter,

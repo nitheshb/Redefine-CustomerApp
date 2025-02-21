@@ -29,7 +29,8 @@ class LoginController extends GetxController {
 
   void loginUser() {
     if (email.text.isNotEmpty && pass.text.isNotEmpty) {
-      logIn(email.text, pass.text).then((user) {
+
+    /*  logIn(email.text, pass.text).then((user) {
         if (user != null) {
           debugPrint("Login Sucessfull");
 
@@ -39,7 +40,14 @@ class LoginController extends GetxController {
         } else {
           debugPrint("Login Failed");
         }
-      });
+      });*/
+      FirebaseAuth _auth = FirebaseAuth.instance;
+      FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+      _auth.signInWithEmailAndPassword(email: email.text.toString(),
+          password:pass.text.toString());
+      Get.offAll(() => BottomBarScreen());
+
     } else {
       debugPrint("Please fill form correctly");
     }

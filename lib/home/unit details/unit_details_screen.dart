@@ -1,3 +1,4 @@
+import 'package:customer_app/colors/colors.dart';
 import 'package:customer_app/tickets/ticket_screen.dart';
 import 'package:customer_app/home/unit%20details/payment%20tracker/payment_tracker.dart';
 import 'package:customer_app/home/unit%20details/unit_details_controller.dart';
@@ -644,7 +645,7 @@ class UnitDetailsScreen extends StatelessWidget {
                   height: 0.050,
                   width: 0.3,
                   radius: 13,
-                  color: appTheme.buttonColor,
+                  color: AppColors.buttoncolor,
                   borderColor: Colors.black,
                   borderWidth: 0.002,
                   child: Center(

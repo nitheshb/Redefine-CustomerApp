@@ -44,6 +44,7 @@ dependencies:
   firebase_core: ^2.10.0
   firebase_messaging: ^14.4.1
   firebase_storage: ^11.0.15
+
   cloud_firestore: ^4.4.4
 
 
@@ -85,10 +86,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: IBMPlexSans
+      fonts:
+        - asset: assets/fonts/IBMPlexSans-VariableFont_wdth.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

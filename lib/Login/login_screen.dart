@@ -1,4 +1,5 @@
 import 'package:customer_app/Login/login_controller.dart';
+import 'package:customer_app/colors/colors.dart';
 import 'package:customer_app/theme/theme.dart';
 import 'package:customer_app/widget/buttons.dart';
 import 'package:flutter/material.dart';
@@ -155,7 +156,7 @@ class LoginScreen extends StatelessWidget {
                             height: 0.060,
                             width: 1,
                             radius: 12,
-                            color: appTheme.buttonColor,
+                            color: AppColors.buttoncolor,
                             borderColor: Colors.black,
                             borderWidth: 0.002,
                             child: Center(
