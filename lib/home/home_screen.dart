@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                       padding: EdgeInsets.fromLTRB(20, 0, 10, 20),
+                       padding: EdgeInsets.fromLTRB(8, 0, 10, 20),
                         child: Row(
                           children: [
           
@@ -94,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                                 )
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8),
+                              padding: EdgeInsets.fromLTRB(5, 8, 8, 8),
                               child: Text(
                                 "Block - C 501 ",
                                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -126,7 +126,7 @@ class HomeScreen extends StatelessWidget {
           
           
                       Padding(
-                        padding: EdgeInsets.fromLTRB(20, 0, 8, 0),
+                        padding: EdgeInsets.fromLTRB(8, 0, 8, 0),
                         child: Row(
                           children: [
                             Column(
@@ -182,30 +182,7 @@ class HomeScreen extends StatelessWidget {
                         )
                       ),
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
                       Padding(
                         padding:  EdgeInsets.fromLTRB(20, 0, 15, 0),
                         child: Row(
@@ -220,7 +197,7 @@ class HomeScreen extends StatelessWidget {
           
                       SizedBox(height: 30,),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(20, 0, 0,0),
+                        padding: EdgeInsets.fromLTRB(11, 0, 0,0),
                         child: Row(
                           children: [
                             Transform.rotate(
@@ -244,7 +221,7 @@ class HomeScreen extends StatelessWidget {
           
           
                         Padding(
-                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(12, 0, 0, 0),
                   child: SizedBox(
                     // Set a fixed height for the scrollable ro
                       height: MediaQuery.of(context).size.height * 0.22,
@@ -464,50 +441,6 @@ class HomeScreen extends StatelessWidget {
                                 ],
                               )
                           ),
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
                         ],
                       ),
                     )
@@ -517,12 +450,12 @@ class HomeScreen extends StatelessWidget {
           
           
                       Padding(
-                        padding: EdgeInsets.fromLTRB(27, 25, 0,10),
+                        padding: EdgeInsets.fromLTRB(13, 25, 0,10),
                         child: Text("Notifications",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,fontFamily: 'IBMPlexSans'),),
                       ),
           
                       Padding(
-                        padding: EdgeInsets.fromLTRB(18, 0,0, 0),
+                        padding: EdgeInsets.fromLTRB(4, 0,0, 0),
                         child: Container(
           
                           padding: EdgeInsets.fromLTRB(15, 7, 0, 7),
@@ -563,14 +496,14 @@ class HomeScreen extends StatelessWidget {
           
           
                       Padding(
-                        padding: EdgeInsets.fromLTRB(27, 25, 0,10),
+                        padding: EdgeInsets.fromLTRB(13, 25, 0,10),
                         child: Text("Community Actions",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
                       ),
           
           
           
                       Padding(
-                        padding: EdgeInsets.fromLTRB(27, 0, 10,0),
+                        padding: EdgeInsets.fromLTRB(13, 0, 10,0),
                         child: Container(
                             height: MediaQuery.of(context).size.height * 0.3,
                             width: MediaQuery.of(context).size.height * 1,
@@ -1083,24 +1016,775 @@ class HomeScreen extends StatelessWidget {
           
           
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
                       SizedBox(height: 30,),
-          
-          
-          
-          
+
+
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(13, 0, 0,5),
+                        child: Text("Find Your Tribe",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                      ),
+
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(13, 0, 0,10),
+                        child: Text("Discover residents who share your "
+                            "interests and background",style: TextStyle(fontSize: 12),),
+                      ),
+                      
+                      
+                      
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(13, 0, 10,0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                    height: MediaQuery.of(context).size.height * 0.20,
+                                    width: MediaQuery.of(context).size.width * 0.46,
+                                    decoration: BoxDecoration(
+                                      borderRadius : BorderRadius.only(
+                                        topLeft: Radius.circular(16),
+                                        topRight: Radius.circular(16),
+                                        bottomLeft: Radius.circular(16),
+                                        bottomRight: Radius.circular(16),
+                                      ),
+                                      boxShadow : [BoxShadow(
+                                          color: Color.fromRGBO(23, 26, 31, 0.07000000029802322),
+                                          offset: Offset(0,0),
+                                          blurRadius: 1
+                                      )],
+                                      color : Color.fromRGBO(254, 254, 254, 1),
+                                      border : Border.all(
+                                        color: Color.fromRGBO(233, 228, 222, 1),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                        children: <Widget>[
+                                          Positioned(
+                                              top: 100,
+                                              left: 44,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Add Your Interest', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(63, 63, 63, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 14,
+                                              left: 21,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Music', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(51, 51, 51, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 12,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6666666666666667
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 49,
+                                              left: 71,
+                                              child: Container(
+                                                  width: 30,
+                                                  height: 30,
+                                                  decoration: BoxDecoration(
+                                                    border : Border.all(
+                                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                                      width: 0.30000001192092896,
+                                                    ),
+                                                    image : DecorationImage(
+                                                        image: AssetImage('assets/image/Image_1_1.png'),
+                                                        fit: BoxFit.fitWidth
+                                                    ),
+                                                    borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                  )
+                                              )
+                                          ),Positioned(
+                                              top: 56,
+                                              left: 104,
+                                              child: Text('+35', textAlign: TextAlign.left, style: TextStyle(
+                                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                                  fontFamily: 'Inter',
+                                                  fontSize: 10,
+                                                  letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                  fontWeight: FontWeight.normal,
+                                                  height: 1.6
+                                              ),)
+                                          ),Positioned(
+                                              top: 50,
+                                              left: 23,
+                                              child: Container(
+                                                  width: 30,
+                                                  height: 30,
+                                                  decoration: BoxDecoration(
+                                                    border : Border.all(
+                                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                                      width: 0.30000001192092896,
+                                                    ),
+                                                    image : DecorationImage(
+                                                        image: AssetImage('assets/image/Image_1_3.png'),
+                                                        fit: BoxFit.fitWidth
+                                                    ),
+                                                    borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                  )
+                                              )
+                                          ),Positioned(
+                                              top: 49,
+                                              left: 44,
+                                              child: Container(
+                                                  width: 30,
+                                                  height: 30,
+                                                  decoration: BoxDecoration(
+                                                    border : Border.all(
+                                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                                      width: 0.30000001192092896,
+                                                    ),
+                                                    image : DecorationImage(
+                                                        image: AssetImage('assets/image/Image_1_2.png'),
+                                                        fit: BoxFit.fitWidth
+                                                    ),
+                                                    borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                  )
+                                              )
+                                          ),Positioned(
+                                              top: 100,
+                                              left: 26,
+                                              child: Container(
+                                                  width: 12,
+                                                  height: 16,
+                            
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 4,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 12,
+                                                                height: 12,
+                                                                decoration: BoxDecoration(
+                                                                  color : Color.fromRGBO(253, 223, 1, 1),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(12, 12)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 1,
+                                                            child: Text('+', textAlign: TextAlign.left, style: TextStyle(
+                                                                color: Color.fromRGBO(0, 0, 0, 1),
+                                                                fontFamily: 'Inter',
+                                                                fontSize: 14,
+                                                                letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                                fontWeight: FontWeight.normal,
+                                                                height: 1
+                                                            ),)
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),
+                                        ]
+                                    )
+                                ),
+                                Spacer(),
+                                Container(
+                                    height: MediaQuery.of(context).size.height * 0.20,
+                                    width: MediaQuery.of(context).size.width * 0.46,
+                                    decoration: BoxDecoration(
+                                      borderRadius : BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        topRight: Radius.circular(10),
+                                        bottomLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
+                                      boxShadow : [BoxShadow(
+                                          color: Color.fromRGBO(23, 26, 31, 0.07000000029802322),
+                                          offset: Offset(0,0),
+                                          blurRadius: 1
+                                      )],
+                                      color : Color.fromRGBO(254, 254, 254, 1),
+                                      border : Border.all(
+                                        color: Color.fromRGBO(233, 228, 222, 1),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                        children: <Widget>[
+                                          Positioned(
+                                              top: 99,
+                                              left: 17,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Chadalavada Sravan Ku', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(138, 138, 138, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 14,
+                                              left: 19,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Chemist', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(57, 57, 57, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 12,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6666666666666667
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 50,
+                                              left: 17,
+                                              child: Container(
+                                                  width: 33,
+                                                  height: 33,
+                        
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 0,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 33,
+                                                                height: 33,
+                                                                decoration: BoxDecoration(
+                                                                  color : Color.fromRGBO(151, 121, 92, 1),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(33, 33)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 5,
+                                                            left: 11,
+                                                            child: Text('C', textAlign: TextAlign.center, style: TextStyle(
+                                                                color: Color.fromRGBO(255, 255, 255, 1),
+                                                                fontFamily: 'Inter',
+                                                                fontSize: 13,
+                                                                letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                                fontWeight: FontWeight.normal,
+                                                                height: 1.6923076923076923
+                                                            ),)
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),
+                                        ]
+                                    )
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 6,),
+                            Row(
+                              children: [
+                                Container(
+                                    height: MediaQuery.of(context).size.height * 0.20,
+                                    width: MediaQuery.of(context).size.width * 0.46,
+                                    decoration: BoxDecoration(
+                                      borderRadius : BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        topRight: Radius.circular(10),
+                                        bottomLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
+                                      boxShadow : [BoxShadow(
+                                          color: Color.fromRGBO(23, 26, 31, 0.07000000029802322),
+                                          offset: Offset(0,0),
+                                          blurRadius: 1
+                                      )],
+                                      color : Color.fromRGBO(254, 254, 254, 1),
+                                      border : Border.all(
+                                        color: Color.fromRGBO(233, 228, 222, 1),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                        children: <Widget>[
+                                          Positioned(
+                                              top: 100,
+                                              left: 45,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Add Your Hometown', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(63, 63, 63, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 14,
+                                              left: 22,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Hyderabad', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(57, 57, 57, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 12,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6666666666666667
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 57,
+                                              left: 126,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('+5', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(42, 42, 42, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 52,
+                                              left: 22,
+                                              child: Container(
+                                                  width: 78,
+                                                  height: 30,
+
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 0,
+                                                            left: 48,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_2_3.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 24,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_2_2.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_2_1.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),Positioned(
+                                              top: 100,
+                                              left: 25,
+                                              child: Container(
+                                                  width: 12,
+                                                  height: 16,
+
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 4,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 12,
+                                                                height: 12,
+                                                                decoration: BoxDecoration(
+                                                                  color : Color.fromRGBO(253, 223, 1, 1),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(12, 12)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 1,
+                                                            child: Text('+', textAlign: TextAlign.left, style: TextStyle(
+                                                                color: Color.fromRGBO(0, 0, 0, 1),
+                                                                fontFamily: 'Inter',
+                                                                fontSize: 14,
+                                                                letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                                fontWeight: FontWeight.normal,
+                                                                height: 1
+                                                            ),)
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),
+                                        ]
+                                    )
+                                ),
+                                Spacer(),
+                                Container(
+                                    height: MediaQuery.of(context).size.height * 0.20,
+                                    width: MediaQuery.of(context).size.width * 0.46,
+                                    decoration: BoxDecoration(
+                                      borderRadius : BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        topRight: Radius.circular(10),
+                                        bottomLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
+                                      boxShadow : [BoxShadow(
+                                          color: Color.fromRGBO(23, 26, 31, 0.07000000029802322),
+                                          offset: Offset(0,0),
+                                          blurRadius: 1
+                                      )],
+                                      color : Color.fromRGBO(254, 254, 254, 1),
+                                      border : Border.all(
+                                        color: Color.fromRGBO(233, 228, 222, 1),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                        children: <Widget>[
+                                          Positioned(
+                                              top: 100,
+                                              left: 43,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Add Your Pets', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(63, 63, 63, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 14,
+                                              left: 19,
+                                              child: Transform.rotate(
+                                                angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                                child: Text('Pets', textAlign: TextAlign.left, style: TextStyle(
+                                                    color: Color.fromRGBO(51, 51, 51, 1),
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 12,
+                                                    letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                    fontWeight: FontWeight.normal,
+                                                    height: 1.6666666666666667
+                                                ),),
+                                              )
+                                          ),Positioned(
+                                              top: 52,
+                                              left: 19,
+                                              child: Container(
+                                                  width: 78,
+                                                  height: 30,
+
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 0,
+                                                            left: 48,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_3_3.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 24,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_3_2.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 30,
+                                                                height: 30,
+                                                                decoration: BoxDecoration(
+                                                                  border : Border.all(
+                                                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                                                    width: 0.30000001192092896,
+                                                                  ),
+                                                                  image : DecorationImage(
+                                                                      image: AssetImage('assets/image/Image_3_1.png'),
+                                                                      fit: BoxFit.fitWidth
+                                                                  ),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                                )
+                                                            )
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),Positioned(
+                                              top: 100,
+                                              left: 22,
+                                              child: Container(
+                                                  width: 12,
+                                                  height: 16,
+
+                                                  child: Stack(
+                                                      children: <Widget>[
+                                                        Positioned(
+                                                            top: 4,
+                                                            left: 0,
+                                                            child: Container(
+                                                                width: 12,
+                                                                height: 12,
+                                                                decoration: BoxDecoration(
+                                                                  color : Color.fromRGBO(253, 223, 1, 1),
+                                                                  borderRadius : BorderRadius.all(Radius.elliptical(12, 12)),
+                                                                )
+                                                            )
+                                                        ),Positioned(
+                                                            top: 0,
+                                                            left: 1,
+                                                            child: Text('+', textAlign: TextAlign.left, style: TextStyle(
+                                                                color: Color.fromRGBO(0, 0, 0, 1),
+                                                                fontFamily: 'Inter',
+                                                                fontSize: 14,
+                                                                letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                                                fontWeight: FontWeight.normal,
+                                                                height: 1
+                                                            ),)
+                                                        ),
+                                                      ]
+                                                  )
+                                              )
+                                          ),
+                                        ]
+                                    )
+                                ),
+                              ],
+
+                                                            )
+                          ],
+                        ),
+
+                      ),
+                      
+                      SizedBox(height: 30,),
+
+
+                      Container(
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          decoration: BoxDecoration(
+                            borderRadius : BorderRadius.only(
+                              topLeft: Radius.circular(16),
+                              topRight: Radius.circular(16),
+                              bottomLeft: Radius.circular(16),
+                              bottomRight: Radius.circular(16),
+                            ),
+                            boxShadow : [BoxShadow(
+                                color: Color.fromRGBO(23, 26, 31, 0.07000000029802322),
+                                offset: Offset(0,0),
+                                blurRadius: 1
+                            )],
+                            color : Color.fromRGBO(254, 254, 254, 1),
+                            border : Border.all(
+                              color: Color.fromRGBO(233, 228, 222, 1),
+                              width: 1,
+                            ),
+                          ),
+                          child: Stack(
+                              children: <Widget>[
+                                Positioned(
+                                    top: 47,
+                                    left: 20,
+                                    child: Transform.rotate(
+                                      angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                      child: Text('Discover, connect, and engage', textAlign: TextAlign.left, style: TextStyle(
+                                          color: Color.fromRGBO(138, 138, 138, 1),
+                                          fontFamily: 'Inter',
+                                          fontSize: 10,
+                                          letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                          fontWeight: FontWeight.normal,
+                                          height: 1.6
+                                      ),),
+                                    )
+                                ),Positioned(
+                                    top: 26,
+                                    left: 20,
+                                    child: Transform.rotate(
+                                      angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                      child: Text('Resident Directory', textAlign: TextAlign.left, style: TextStyle(
+                                          color: Color.fromRGBO(42, 42, 42, 1),
+                                          fontFamily: 'Inter',
+                                          fontSize: 12,
+                                          letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                          fontWeight: FontWeight.normal,
+                                          height: 1.6666666666666667
+                                      ),),
+                                    )
+                                ),Positioned(
+                                    top: 36,
+                                    left: 313,
+                                    child: Transform.rotate(
+                                      angle: -1.4033419209422001e-14 * (math.pi / 180),
+                                      child: Text('+696', textAlign: TextAlign.left, style: TextStyle(
+                                          color: Color.fromRGBO(42, 42, 42, 1),
+                                          fontFamily: 'Inter',
+                                          fontSize: 12,
+                                          letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+                                          fontWeight: FontWeight.normal,
+                                          height: 1.6666666666666667
+                                      ),),
+                                    )
+                                ),Positioned(
+                                    top: 30,
+                                    left: 220,
+                                    child: Container(
+                                        width: 78,
+                                        height: 30,
+
+                                        child: Stack(
+                                            children: <Widget>[
+                                              Positioned(
+                                                  top: 0,
+                                                  left: 48,
+                                                  child: Container(
+                                                      width: 30,
+                                                      height: 30,
+                                                      decoration: BoxDecoration(
+                                                        border : Border.all(
+                                                          color: Color.fromRGBO(255, 255, 255, 1),
+                                                          width: 0.30000001192092896,
+                                                        ),
+                                                        image : DecorationImage(
+                                                            image: AssetImage('assets/images/Image.png'),
+                                                            fit: BoxFit.fitWidth
+                                                        ),
+                                                        borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                      )
+                                                  )
+                                              ),Positioned(
+                                                  top: 0,
+                                                  left: 24,
+                                                  child: Container(
+                                                      width: 30,
+                                                      height: 30,
+                                                      decoration: BoxDecoration(
+                                                        border : Border.all(
+                                                          color: Color.fromRGBO(255, 255, 255, 1),
+                                                          width: 0.30000001192092896,
+                                                        ),
+                                                        image : DecorationImage(
+                                                            image: AssetImage('assets/images/Image.png'),
+                                                            fit: BoxFit.fitWidth
+                                                        ),
+                                                        borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                      )
+                                                  )
+                                              ),Positioned(
+                                                  top: 0,
+                                                  left: 0,
+                                                  child: Container(
+                                                      width: 30,
+                                                      height: 30,
+                                                      decoration: BoxDecoration(
+                                                        border : Border.all(
+                                                          color: Color.fromRGBO(255, 255, 255, 1),
+                                                          width: 0.30000001192092896,
+                                                        ),
+                                                        image : DecorationImage(
+                                                            image: AssetImage('assets/image/Image_2_1.png'),
+                                                            fit: BoxFit.fitWidth
+                                                        ),
+                                                        borderRadius : BorderRadius.all(Radius.elliptical(30, 30)),
+                                                      )
+                                                  )
+                                              ),
+                                            ]
+                                        )
+                                    )
+                                ),Positioned(
+                                    top: 40.04011917114258,
+                                    left: 147.10159301757812,
+                                    child: Transform.rotate(
+                                      angle: 90.58205755834581 * (math.pi / 180),
+                                      child: Image.asset(
+                                          'assets/images/vector.svg',
+
+                                      ),
+                                    )
+                                ),
+                              ]
+                          )
+                      ),
+
+
+
+
+
+
+
+
+
+
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: SizedBox(
